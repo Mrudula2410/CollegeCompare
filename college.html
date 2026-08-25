@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>All Colleges - College Compare</title>
+
+    <link rel="stylesheet" href="/css files/college.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <!-- LOGO -->
+    <div class="icon">
+        <i class="fas fa-graduation-cap"></i>
+        <span class="clg">College</span>
+        <span class="cmp">Compare</span>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="links">
+        <a href="/html files/homepage.html">Home</a>
+        <a href="/html files/college.html">Colleges</a>
+
+        <a href="/html files/compare.html">Compare</a>
+        <a href="/html files/dashboard.html">Dashboard</a>
+    </nav>
+
+</header>
+
+
+<!-- =====================================================
+                    FILTER BAR
+===================================================== -->
+
+<section class="filter-bar">
+
+    <div class="filter-heading">
+        <h2>Filters</h2>
+        <span id="clearFilters">Clear All</span>
+    </div>
+
+
+    <!-- LOCATION -->
+
+    <div class="filter-box">
+
+        <div class="filter-title">
+            <i class="fas fa-location-dot"></i>
+            <span>Location</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+
+        <div class="filter-dropdown">
+
+            <input type="text"
+                id="locationSearch"
+                class="filter-search"
+                placeholder="Search location">
+
+            <div class="filter-options" id="locationOptions">
+
+                <label>
+                    <input type="checkbox" value="Pune">
+                    Pune
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Mumbai">
+                    Mumbai
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Nagpur">
+                    Nagpur
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Nashik">
+                    Nashik
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Chhatrapati Sambhajinagar">
+                    Chhatrapati Sambhajinagar
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Kolhapur">
+                    Kolhapur
+                </label>
+
+                <div id="moreLocations">
+
+                    <label>
+                        <input type="checkbox" value="Ahilyanagar">
+                        Ahilyanagar
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Akola">
+                        Akola
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Amravati">
+                        Amravati
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Beed">
+                        Beed
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Bhandara">
+                        Bhandara
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Buldhana">
+                        Buldhana
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Chandrapur">
+                        Chandrapur
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Dhule">
+                        Dhule
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Gadchiroli">
+                        Gadchiroli
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Gondia">
+                        Gondia
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Hingoli">
+                        Hingoli
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Jalgaon">
+                        Jalgaon
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Jalna">
+                        Jalna
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Latur">
+                        Latur
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Nanded">
+                        Nanded
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Parbhani">
+                        Parbhani
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Raigad">
+                        Raigad
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Ratnagiri">
+                        Ratnagiri
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Sangli">
+                        Sangli
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Satara">
+                        Satara
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Solapur">
+                        Solapur
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Thane">
+                        Thane
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Wardha">
+                        Wardha
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Yavatmal">
+                        Yavatmal
+                    </label>
+
+                </div>
+
+            </div>
+
+            <span class="more-btn" id="locationMore">
+                + More
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- BRANCH -->
+
+    <div class="filter-box">
+
+        <div class="filter-title">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Branch</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+
+        <div class="filter-dropdown">
+
+            <input type="text"
+                id="branchSearch"
+                class="filter-search"
+                placeholder="Search branch">
+
+            <div class="filter-options" id="branchOptions">
+
+                <label>
+                    <input type="checkbox" value="Computer Engineering">
+                    Computer Engineering
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Computer Science and Engineering">
+                    Computer Science & Engineering
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Information Technology">
+                    Information Technology
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Artificial Intelligence and Data Science">
+                    AI & Data Science
+                </label>
+
+                <label>
+                    <input type="checkbox"
+                        value="Artificial Intelligence and Machine Learning">
+                    AI & Machine Learning
+                </label>
+
+                <label>
+                    <input type="checkbox"
+                        value="Electronics and Telecommunication">
+                    Electronics & Telecommunication
+                </label>
+
+                <div id="moreBranches">
+
+                    <label>
+                        <input type="checkbox" value="Data Science">
+                        Data Science
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Cyber Security">
+                        Cyber Security
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Internet of Things">
+                        Internet of Things
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Robotics and Automation">
+                        Robotics & Automation
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Electronics Engineering">
+                        Electronics Engineering
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Electrical Engineering">
+                        Electrical Engineering
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Mechanical Engineering">
+                        Mechanical Engineering
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Civil Engineering">
+                        Civil Engineering
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Chemical Engineering">
+                        Chemical Engineering
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Instrumentation Engineering">
+                        Instrumentation Engineering
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Automobile Engineering">
+                        Automobile Engineering
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Aerospace Engineering">
+                        Aerospace Engineering
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Biotechnology Engineering">
+                        Biotechnology Engineering
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Production Engineering">
+                        Production Engineering
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Manufacturing Engineering">
+                        Manufacturing Engineering
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Mechatronics Engineering">
+                        Mechatronics Engineering
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Food Technology">
+                        Food Technology
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Textile Engineering">
+                        Textile Engineering
+                    </label>
+
+                </div>
+
+            </div>
+
+            <span class="more-btn" id="branchMore">
+                + More
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- FEES -->
+
+    <div class="filter-box">
+
+        <div class="filter-title">
+            <i class="fas fa-indian-rupee-sign"></i>
+            <span>Fee Range</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+
+        <div class="filter-dropdown fee-dropdown">
+
+            <input type="range"
+                id="feeRange"
+                min="0"
+                max="500000"
+                value="250000">
+
+            <div class="fee-values">
+                <span>₹0</span>
+                <span id="feeValue">₹2,50,000</span>
+                <span>₹5,00,000</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- COLLEGE TYPE -->
+
+    <div class="filter-box">
+
+        <div class="filter-title">
+            <i class="fas fa-building-columns"></i>
+            <span>College Type</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+
+        <div class="filter-dropdown">
+
+            <label>
+                <input type="checkbox" value="Government">
+                Government
+            </label>
+
+            <label>
+                <input type="checkbox" value="Private">
+                Private
+            </label>
+
+            <label>
+                <input type="checkbox" value="Autonomous">
+                Autonomous
+            </label>
+
+            <label>
+                <input type="checkbox" value="University">
+                University
+            </label>
+
+        </div>
+
+    </div>
+
+
+    <button id="applyFilters" class="apply-btn">
+        Apply Filters
+    </button>
+
+</section>
+
+
+<!-- =====================================================
+                    ALL COLLEGES
+===================================================== -->
+
+<main class="all-colleges">
+
+    <div class="page-heading">
+
+        <div>
+            <h1>All Colleges</h1>
+
+            <p>
+                Explore engineering colleges across Maharashtra
+            </p>
+        </div>
+
+        <!-- SEARCH -->
+
+        <div class="college-search">
+
+            <input type="text"
+                id="collegeSearch"
+                placeholder="Search college...">
+
+            <button id="searchBtn">
+                <i class="fas fa-search"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+                        COLLEGE GRID
+    ===================================================== -->
+
+    <div class="college-grid">
+
+
+        <!-- ================= CARD 1 ================= -->
+
+        <div class="college-card"
+            data-name="College of Engineering Pune COEP"
+            data-location="Pune"
+            data-branches="Computer Engineering,Computer Science and Engineering,Electrical Engineering,Civil Engineering,Mechanical Engineering"
+            data-fees="135000"
+            data-type="Government">
+
+            <div class="college-image">
+                <img src="/images/COEP.jpeg"
+                    alt="COEP">
+            </div>
+
+            <div class="college-info">
+
+                <h2>College of Engineering Pune COEP</h2>
+
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    4.5
+                </span>
+
+                <p class="location">
+                    <i class="fas fa-location-dot"></i>
+                    Pune, Maharashtra
+                </p>
+
+                <div class="college-details">
+
+                    <div>
+                        <span>Fees</span>
+                        <b>₹1,35,000</b>
+                    </div>
+
+                    <div>
+                        <span>Cutoff</span>
+                        <b>96%</b>
+                    </div>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a href="/clgDetails/html_files/coep.html">
+                        <button class="view-btn">
+                            View Details
+                        </button>
+                    </a>
+
+                    <button class="compare-btn">
+                        + Compare
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CARD 2 ================= -->
+
+        <div class="college-card"
+            data-name="Veermata Jijabai Technological Institute VJTI"
+            data-location="Mumbai"
+            data-branches="Computer Engineering,Information Technology,Mechanical Engineering,Electrical Engineering"
+            data-fees="85000"
+            data-type="Government,Autonomous">
+
+            <div class="college-image">
+                <img src="/images/VJTI.jpeg"
+                    alt="VJTI">
+            </div>
+
+            <div class="college-info">
+
+                <h2>Veermata Jijabai Technological Institute</h2>
+
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    4.6
+                </span>
+
+                <p class="location">
+                    <i class="fas fa-location-dot"></i>
+                    Mumbai, Maharashtra
+                </p>
+
+                <div class="college-details">
+
+                    <div>
+                        <span>Fees</span>
+                        <b>₹85,000</b>
+                    </div>
+
+                    <div>
+                        <span>Cutoff</span>
+                        <b>98%</b>
+                    </div>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a href="/clgDetails/html_files/VJTI.html">
+                        <button class="view-btn">
+                            View Details
+                        </button>
+                    </a>
+
+                    <button class="compare-btn">
+                        + Compare
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CARD 3 ================= -->
+
+        <div class="college-card"
+            data-name="Pune Institute of Computer Technology PICT"
+            data-location="Pune"
+            data-branches="Computer Engineering,Information Technology,Electronics and Telecommunication"
+            data-fees="120000"
+            data-type="Private">
+
+            <div class="college-image">
+                <img src="/images/pict"
+                    alt="PICT">
+            </div>
+
+            <div class="college-info">
+
+                <h2>Pune Institute of Computer Technology</h2>
+
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    4.4
+                </span>
+
+                <p class="location">
+                    <i class="fas fa-location-dot"></i>
+                    Pune, Maharashtra
+                </p>
+
+                <div class="college-details">
+
+                    <div>
+                        <span>Fees</span>
+                        <b>₹1,20,000</b>
+                    </div>
+
+                    <div>
+                        <span>Cutoff</span>
+                        <b>95%</b>
+                    </div>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a href="/clgDetails/html_files/PICT.html">
+                        <button class="view-btn">
+                            View Details
+                        </button>
+                    </a>
+
+                    <button class="compare-btn">
+                        + Compare
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CARD 4 ================= -->
+
+        <div class="college-card"
+            data-name="Government College of Engineering Nagpur GCOEN"
+            data-location="Nagpur"
+            data-branches="Computer Engineering,Computer Science and Engineering,Electronics and Telecommunication,Civil Engineering"
+            data-fees="75000"
+            data-type="Government">
+
+            <div class="college-image">
+                <img src="/images/GCOEN.jpeg"
+                    alt="GCOEN">
+            </div>
+
+            <div class="college-info">
+
+                <h2>Government College of Engineering Nagpur</h2>
+
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    4.2
+                </span>
+
+                <p class="location">
+                    <i class="fas fa-location-dot"></i>
+                    Nagpur, Maharashtra
+                </p>
+
+                <div class="college-details">
+
+                    <div>
+                        <span>Fees</span>
+                        <b>₹75,000</b>
+                    </div>
+
+                    <div>
+                        <span>Cutoff</span>
+                        <b>88%</b>
+                    </div>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a href="/clgDetails/html_files/GCOEN.html">
+                        <button class="view-btn">
+                            View Details
+                        </button>
+                    </a>
+
+                    <button class="compare-btn">
+                        + Compare
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CARD 5 ================= -->
+
+        <div class="college-card"
+            data-name="Walchand College of Engineering"
+            data-location="Sangli"
+            data-branches="Computer Science and Engineering,Electronics Engineering,Mechanical Engineering"
+            data-fees="90000"
+            data-type="Autonomous">
+
+            <div class="college-image">
+                <img src="/images/walchand"
+                    alt="Walchand">
+            </div>
+
+            <div class="college-info">
+
+                <h2>Walchand College of Engineering</h2>
+
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    4.5
+                </span>
+
+                <p class="location">
+                    <i class="fas fa-location-dot"></i>
+                    Sangli, Maharashtra
+                </p>
+
+                <div class="college-details">
+
+                    <div>
+                        <span>Fees</span>
+                        <b>₹90,000</b>
+                    </div>
+
+                    <div>
+                        <span>Cutoff</span>
+                        <b>94%</b>
+                    </div>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a href="/clgDetails/html_files/Walchand.html">
+                        <button class="view-btn">
+                            View Details
+                        </button>
+                    </a>
+
+                    <button class="compare-btn">
+                        + Compare
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CARD 6 ================= -->
+
+        
+
+        <!-- ================= CARD 7 ================= -->
+
+        <div class="college-card"
+            data-name="MIT World Peace University"
+            data-location="Pune"
+            data-branches="Information Technology,Computer Science and Engineering"
+            data-fees="160000"
+            data-type="Private">
+
+            <div class="college-image">
+                <img src="/images/MIT-World-Peace-University-Pune.webp"
+                    alt="MIT WPU">
+            </div>
+
+            <div class="college-info">
+
+                <h2>MIT World Peace University</h2>
+
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    4.3
+                </span>
+
+                <p class="location">
+                    <i class="fas fa-location-dot"></i>
+                    Pune, Maharashtra
+                </p>
+
+                <div class="college-details">
+
+                    <div>
+                        <span>Fees</span>
+                        <b>₹1,60,000</b>
+                    </div>
+
+                    <div>
+                        <span>Cutoff</span>
+                        <b>92%</b>
+                    </div>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a href="/clgDetails/html_files/MIT.html">
+                        <button class="view-btn">
+                            View Details
+                        </button>
+                    </a>
+
+                    <button class="compare-btn">
+                        + Compare
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CARD 8 ================= -->
+
+        <div class="college-card"
+            data-name="Vishwakarma Institute of Technology VIT"
+            data-location="Pune"
+            data-branches="Computer Science and Engineering,Information Technology"
+            data-fees="145000"
+            data-type="Private">
+
+            <div class="college-image">
+                <img src="/images/vit"
+                    alt="VIT Pune">
+            </div>
+
+            <div class="college-info">
+
+                <h2>Vishwakarma Institute of Technology</h2>
+
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    4.4
+                </span>
+
+                <p class="location">
+                    <i class="fas fa-location-dot"></i>
+                    Pune, Maharashtra
+                </p>
+
+                <div class="college-details">
+
+                    <div>
+                        <span>Fees</span>
+                        <b>₹1,45,000</b>
+                    </div>
+
+                    <div>
+                        <span>Cutoff</span>
+                        <b>94%</b>
+                    </div>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a href="/clgDetails/html_files/VIT.html">
+                        <button class="view-btn">
+                            View Details
+                        </button>
+                    </a>
+
+                    <button class="compare-btn">
+                        + Compare
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CARD 9 ================= -->
+
+        <div class="college-card"
+            data-name="Pimpri Chinchwad College of Engineering PCCOE"
+            data-location="Pune"
+            data-branches="Computer Engineering,Information Technology"
+            data-fees="140000"
+            data-type="Private">
+
+            <div class="college-image">
+                <img src="/images/pimpri"
+                    alt="PCCOE">
+            </div>
+
+            <div class="college-info">
+
+                <h2>Pimpri Chinchwad College of Engineering</h2>
+
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    4.3
+                </span>
+
+                <p class="location">
+                    <i class="fas fa-location-dot"></i>
+                    Pune, Maharashtra
+                </p>
+
+                <div class="college-details">
+
+                    <div>
+                        <span>Fees</span>
+                        <b>₹1,40,000</b>
+                    </div>
+
+                    <div>
+                        <span>Cutoff</span>
+                        <b>91%</b>
+                    </div>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a href="/clgDetails/html_files/Pimpri.html">
+                        <button class="view-btn">
+                            View Details
+                        </button>
+                    </a>
+
+                    <button class="compare-btn">
+                        + Compare
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CARD 10 ================= -->
+
+        <div class="college-card"
+            data-name="AISSMS College of Engineering"
+            data-location="Pune"
+            data-branches="Electronics and Telecommunication"
+            data-fees="125000"
+            data-type="Private">
+
+            <div class="college-image">
+                <img src="/images/AISSMS"
+                    alt="AISSMS">
+            </div>
+
+            <div class="college-info">
+
+                <h2>AISSMS College of Engineering</h2>
+
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    4.1
+                </span>
+
+                <p class="location">
+                    <i class="fas fa-location-dot"></i>
+                    Pune, Maharashtra
+                </p>
+
+                <div class="college-details">
+
+                    <div>
+                        <span>Fees</span>
+                        <b>₹1,25,000</b>
+                    </div>
+
+                    <div>
+                        <span>Cutoff</span>
+                        <b>88%</b>
+                    </div>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a href="/clgDetails/html_files/AISSMS.html">
+                        <button class="view-btn">
+                            View Details
+                        </button>
+                    </a>
+
+                    <button class="compare-btn">
+                        + Compare
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CARD 11 ================= -->
+
+        <div class="college-card"
+            data-name="Dr D Y Patil Institute of Technology"
+            data-location="Pune"
+            data-branches="Artificial Intelligence and Data Science,Computer Engineering"
+            data-fees="130000"
+            data-type="Private">
+
+            <div class="college-image">
+                <img src="/images/dypatil"
+                    alt="DY Patil">
+            </div>
+
+            <div class="college-info">
+
+                <h2>Dr. D. Y. Patil Institute of Technology</h2>
+
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    4.2
+                </span>
+
+                <p class="location">
+                    <i class="fas fa-location-dot"></i>
+                    Pune, Maharashtra
+                </p>
+
+                <div class="college-details">
+
+                    <div>
+                        <span>Fees</span>
+                        <b>₹1,30,000</b>
+                    </div>
+
+                    <div>
+                        <span>Cutoff</span>
+                        <b>89%</b>
+                    </div>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a href="/clgDetails/html_files/DY_Patil.html">
+                        <button class="view-btn">
+                            View Details
+                        </button>
+                    </a>
+
+                    <button class="compare-btn">
+                        + Compare
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CARD 12 ================= -->
+
+        <div class="college-card"
+            data-name="Sardar Patel Institute of Technology SPIT"
+            data-location="Mumbai"
+            data-branches="Information Technology,Computer Engineering"
+            data-fees="120000"
+            data-type="Private">
+
+            <div class="college-image">
+                <img src="/images/SPIT"
+                    alt="SPIT">
+            </div>
+
+            <div class="college-info">
+
+                <h2>Sardar Patel Institute of Technology</h2>
+
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    4.4
+                </span>
+
+                <p class="location">
+                    <i class="fas fa-location-dot"></i>
+                    Mumbai, Maharashtra
+                </p>
+
+                <div class="college-details">
+
+                    <div>
+                        <span>Fees</span>
+                        <b>₹1,20,000</b>
+                    </div>
+
+                    <div>
+                        <span>Cutoff</span>
+                        <b>95%</b>
+                    </div>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a href="/clgDetails/html_files/SPIT.html">
+                        <button class="view-btn">
+                            View Details
+                        </button>
+                    </a>
+
+                    <button class="compare-btn">
+                        + Compare
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CARD 13 ================= -->
+
+        <div class="college-card"
+            data-name="Shri Ramdeobaba College of Engineering RCOEM"
+            data-location="Nagpur"
+            data-branches="Computer Science and Engineering,Computer Engineering,Information Technology"
+            data-fees="110000"
+            data-type="University">
+
+            <div class="college-image">
+                <img src="/images/RCOEM.jpeg"
+                    alt="RCOEM">
+            </div>
+
+            <div class="college-info">
+
+                <h2>Shri Ramdeobaba College of Engineering</h2>
+
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    4.3
+                </span>
+
+                <p class="location">
+                    <i class="fas fa-location-dot"></i>
+                    Nagpur, Maharashtra
+                </p>
+
+                <div class="college-details">
+
+                    <div>
+                        <span>Fees</span>
+                        <b>₹1,10,000</b>
+                    </div>
+
+                    <div>
+                        <span>Cutoff</span>
+                        <b>90%</b>
+                    </div>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a href="/clgDetails/html_files/RCOEM.html">
+                        <button class="view-btn">
+                            View Details
+                        </button>
+                    </a>
+
+                    <button class="compare-btn">
+                        + Compare
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CARD 14 ================= -->
+
+        <div class="college-card"
+            data-name="Yeshwantrao Chavan College of Engineering YCCE"
+            data-location="Nagpur"
+            data-branches="Electronics and Telecommunication,Computer Engineering,Information Technology"
+            data-fees="95000"
+            data-type="Private">
+
+            <div class="college-image">
+                <img src="/images/YCCE"
+                    alt="YCCE">
+            </div>
+
+            <div class="college-info">
+
+                <h2>Yeshwantrao Chavan College of Engineering</h2>
+
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    4.2
+                </span>
+
+                <p class="location">
+                    <i class="fas fa-location-dot"></i>
+                    Nagpur, Maharashtra
+                </p>
+
+                <div class="college-details">
+
+                    <div>
+                        <span>Fees</span>
+                        <b>₹95,000</b>
+                    </div>
+
+                    <div>
+                        <span>Cutoff</span>
+                        <b>86%</b>
+                    </div>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a href="/clgDetails/html_files/YCCE.html">
+                        <button class="view-btn">
+                            View Details
+                        </button>
+                    </a>
+
+                    <button class="compare-btn">
+                        + Compare
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CARD 15 ================= -->
+
+        <div class="college-card"
+            data-name="K K Wagh Institute of Engineering Education"
+            data-location="Nashik"
+            data-branches="Computer Engineering,Computer Science and Engineering"
+            data-fees="105000"
+            data-type="Private">
+
+            <div class="college-image">
+                <img src="/images/KKwagh"
+                    alt="KK Wagh">
+            </div>
+
+            <div class="college-info">
+
+                <h2>K. K. Wagh Institute of Engineering Education</h2>
+
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    4.1
+                </span>
+
+                <p class="location">
+                    <i class="fas fa-location-dot"></i>
+                    Nashik, Maharashtra
+                </p>
+
+                <div class="college-details">
+
+                    <div>
+                        <span>Fees</span>
+                        <b>₹1,05,000</b>
+                    </div>
+
+                    <div>
+                        <span>Cutoff</span>
+                        <b>84%</b>
+                    </div>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a href="/clgDetails/html_files/KK_Wagh.html">
+                        <button class="view-btn">
+                            View Details
+                        </button>
+                    </a>
+
+                    <button class="compare-btn">
+                        + Compare
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CARD 16 ================= -->
+
+        <div class="college-card"
+            data-name="Jawaharlal Nehru Engineering College JNEC"
+            data-location="Chhatrapati Sambhajinagar"
+            data-branches="Mechanical Engineering,Computer Engineering"
+            data-fees="90000"
+            data-type="Private">
+
+            <div class="college-image">
+                <img src="/images/jnec"
+                    alt="JNEC">
+            </div>
+
+            <div class="college-info">
+
+                <h2>Jawaharlal Nehru Engineering College</h2>
+
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    4.0
+                </span>
+
+                <p class="location">
+                    <i class="fas fa-location-dot"></i>
+                    Chhatrapati Sambhajinagar
+                </p>
+
+                <div class="college-details">
+
+                    <div>
+                        <span>Fees</span>
+                        <b>₹90,000</b>
+                    </div>
+
+                    <div>
+                        <span>Cutoff</span>
+                        <b>78%</b>
+                    </div>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a href="/clgDetails/html_files/JNEC.html">
+                        <button class="view-btn">
+                            View Details
+                        </button>
+                    </a>
+
+                    <button class="compare-btn">
+                        + Compare
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CARD 17 ================= -->
+
+        <div class="college-card"
+            data-name="Kolhapur Institute of Technology KIT"
+            data-location="Kolhapur"
+            data-branches="Computer Science and Engineering,Computer Engineering"
+            data-fees="100000"
+            data-type="Private">
+
+            <div class="college-image">
+                <img src="/images/KIT"
+                    alt="KIT">
+            </div>
+
+            <div class="college-info">
+
+                <h2>Kolhapur Institute of Technology</h2>
+
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    4.1
+                </span>
+
+                <p class="location">
+                    <i class="fas fa-location-dot"></i>
+                    Kolhapur, Maharashtra
+                </p>
+
+                <div class="college-details">
+
+                    <div>
+                        <span>Fees</span>
+                        <b>₹1,00,000</b>
+                    </div>
+
+                    <div>
+                        <span>Cutoff</span>
+                        <b>82%</b>
+                    </div>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a href="/clgDetails/html_files/KIT.html">
+                        <button class="view-btn">
+                            View Details
+                        </button>
+                    </a>
+
+                    <button class="compare-btn">
+                        + Compare
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</main>
+
+
+<script src="/js files/college.js"></script>
+
+</body>
+</html>

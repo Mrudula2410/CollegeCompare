@@ -1,0 +1,993 @@
+ /* =========================================
+   BASIC RESET
+========================================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f8f8fc;
+
+    color: #202020;
+
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+
+    height: 72px;
+
+    background: white;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 55px;
+
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #3434b9;
+
+    font-size: 22px;
+
+    font-weight: 700;
+  
+
+}
+
+
+.clg{
+    color: black;
+  font-weight: bold;
+}
+
+.cmp{
+    gap: 0;
+    color: blue;
+  font-weight: bold;
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 34px;
+
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #222;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    padding: 20px 0;
+
+}
+
+
+.nav-links a:hover {
+
+    color: #5141d5;
+
+}
+
+
+.nav-links a.active {
+
+    color: #5141d5;
+
+    font-weight: bold;
+
+    border-bottom: 2px solid #5141d5;
+
+}
+
+
+.nav-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+
+.bookmark {
+
+    font-size: 20px;
+
+    color: #555;
+
+}
+
+
+.user-icon {
+
+    width: 26px;
+
+    height: 26px;
+
+    border-radius: 50%;
+
+    background: #eee;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.main-container {
+
+    width: 94%;
+
+    max-width: 1200px;
+
+    margin: 25px auto;
+
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.page-heading {
+
+    margin-bottom: 18px;
+
+}
+
+
+.page-heading h1 {
+
+    font-size: 24px;
+
+    color: #151515;
+
+    margin-bottom: 5px;
+
+}
+
+
+.page-heading p {
+
+    font-size: 11px;
+
+    color: #777;
+
+}
+
+
+/* =========================================
+   TOP AREA
+========================================= */
+
+.top-area {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.selected-colleges {
+
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+    min-height: 34px;
+
+}
+
+
+/* =========================================
+   SELECTED COLLEGE CHIP
+========================================= */
+
+.college-chip {
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 7px;
+
+    min-height: 34px;
+
+    padding: 0 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 10px;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+
+}
+
+
+.chip-icon {
+
+    font-size: 12px;
+
+}
+
+
+.remove-btn {
+
+    border: none;
+
+    background: transparent;
+
+    color: #777;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    line-height: 1;
+
+}
+
+
+.remove-btn:hover {
+
+    color: #e22;
+
+}
+
+
+/* =========================================
+   ADD COLLEGE
+========================================= */
+
+.add-wrapper {
+
+    position: relative;
+
+}
+
+
+.add-btn {
+
+    height: 36px;
+
+    padding: 0 17px;
+
+    background: #5141d5;
+
+    border: none;
+
+    color: white;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+}
+
+
+.add-btn:hover {
+
+    background: #4031b9;
+
+}
+
+
+.add-btn span {
+
+    font-size: 16px;
+
+    line-height: 0;
+
+}
+
+
+/* =========================================
+   COLLEGE DRAWER
+========================================= */
+
+.college-menu {
+
+    position: absolute;
+
+    top: 45px;
+
+    right: 0;
+
+    width: 280px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+
+    z-index: 1000;
+
+    display: none;
+
+    overflow: hidden;
+
+}
+
+
+.college-menu.show {
+
+    display: block;
+
+}
+
+
+/* DRAWER HEADER */
+
+.drawer-header {
+
+    height: 45px;
+
+    padding: 0 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid #eee;
+
+    background: #faf9ff;
+
+}
+
+
+.drawer-header strong {
+
+    font-size: 12px;
+
+    color: #25205f;
+
+}
+
+
+.drawer-header button {
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 20px;
+
+    color: #777;
+
+    cursor: pointer;
+
+}
+
+
+.drawer-header button:hover {
+
+    color: red;
+
+}
+
+
+/* COLLEGE ITEM */
+
+.drawer-college {
+
+    height: 45px;
+
+    padding: 0 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid #f0f0f0;
+
+    cursor: pointer;
+
+    font-size: 10px;
+
+    transition: 0.2s;
+
+}
+
+
+.drawer-college:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.drawer-college:hover {
+
+    background: #f2f0ff;
+
+    color: #5141d5;
+
+}
+
+
+.drawer-college.added {
+
+    background: #fafafa;
+
+    color: #aaa;
+
+    cursor: not-allowed;
+
+}
+
+
+.drawer-add {
+
+    color: #5141d5;
+
+    font-size: 17px;
+
+}
+
+
+.drawer-added {
+
+    color: #5141d5;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================================
+   COMPARISON CARD
+========================================= */
+
+.comparison-card {
+
+    background: white;
+
+    border: 1px solid #e0e0e0;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+
+}
+
+
+.table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
+
+#comparisonTable {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+
+}
+
+
+#comparisonTable th {
+
+    background: #f2f0ff;
+
+    color: #26206d;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    padding: 11px 8px;
+
+    border: 1px solid #deddf0;
+
+    text-align: center;
+
+}
+
+
+#comparisonTable th:first-child {
+
+    text-align: left;
+
+    width: 21%;
+
+}
+
+
+#comparisonTable td {
+
+    padding: 9px 8px;
+
+    border: 1px solid #e7e7e7;
+
+    font-size: 10px;
+
+    text-align: center;
+
+    color: #333;
+
+}
+
+
+#comparisonTable td:first-child {
+
+    background: #fafafa;
+
+    text-align: left;
+
+    font-weight: 600;
+
+    color: #555;
+
+}
+
+
+#comparisonTable tbody tr:hover td {
+
+    background: #fbfaff;
+
+}
+
+
+/* RATING */
+
+.rating {
+
+    color: #555;
+
+}
+
+
+.available {
+
+    color: #20a052;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   EMPTY TABLE
+========================================= */
+
+.empty-state {
+
+    padding: 60px 20px !important;
+
+    text-align: center !important;
+
+    background: white !important;
+
+}
+
+
+.empty-icon {
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.empty-state h3 {
+
+    font-size: 15px;
+
+    color: #333;
+
+    margin-bottom: 5px;
+
+}
+
+
+.empty-state p {
+
+    font-size: 10px;
+
+    color: #888;
+
+}
+
+
+/* =========================================
+   BEST MATCH
+========================================= */
+
+.best-match {
+
+    margin-top: 15px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    min-height: 65px;
+
+    padding: 10px 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.trophy {
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 8px;
+
+    background: #fff8df;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 21px;
+
+}
+
+
+.best-text {
+
+    flex: 1;
+
+}
+
+
+.best-text h3 {
+
+    color: #29216e;
+
+    font-size: 12px;
+
+    margin-bottom: 4px;
+
+}
+
+
+.best-text p {
+
+    color: #666;
+
+    font-size: 10px;
+
+}
+
+
+.details-btn {
+
+    border: 1px solid #5141d5;
+
+    background: white;
+
+    color: #5141d5;
+
+    border-radius: 6px;
+
+    padding: 8px 15px;
+
+    font-size: 10px;
+
+    cursor: pointer;
+
+}
+
+
+.details-btn:hover {
+
+    background: #5141d5;
+
+    color: white;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width: 800px) {
+
+    .navbar {
+
+        padding: 0 3%;
+
+    }
+
+
+    .nav-links {
+
+        gap: 12px;
+
+    }
+
+
+    .nav-links a {
+
+        font-size: 9px;
+
+    }
+
+
+    .top-area {
+
+        align-items: flex-start;
+
+    }
+
+
+    .college-menu {
+
+        right: 0;
+
+    }
+
+}
+
+
+@media(max-width: 550px) {
+
+    .navbar {
+
+        height: auto;
+
+        padding: 12px;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+
+    }
+
+
+    .nav-links {
+
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+
+    .top-area {
+
+        flex-direction: column;
+
+    }
+
+
+    .add-wrapper {
+
+        width: 100%;
+
+    }
+
+
+    .add-btn {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+
+    .college-menu {
+
+        width: 100%;
+
+    }
+
+
+    .best-match {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .details-btn {
+
+        width: 100%;
+
+    }
+
+}
+
+.college-menu {
+    display: none;
+}
+
+.college-menu.show {
+    display: block;
+}
+
+.college-menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.college-menu-item button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.college-menu-item button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+.selected-colleges {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.selected-college {
+    min-width: 220px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.selected-college h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.selected-college p {
+    color: #666;
+    font-size: 13px;
+}
+
+.remove-college {
+    border: none;
+    background: none;
+    color: red;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#comparisonTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#comparisonTable th,
+#comparisonTable td {
+    padding: 16px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#comparisonTable th {
+    background: #f1f4ff;
+    color: #222;
+}
+
+#comparisonTable td:first-child {
+    font-weight: bold;
+    background: #f8f9ff;
+}
+
+#comparisonTable tr:hover {
+    background: #fafafa;
+}

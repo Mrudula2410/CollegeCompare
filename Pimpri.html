@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PCCOE Pune - College Details</title>
+
+    <link rel="stylesheet" href="/clgDetails/css_files/details.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+      <div class="logo">🎓 CollegeCompare</div>
+
+      <div class="nav-links">
+        <a href="/html files/homepage.html">Home</a>
+
+        <a href="/html files/college.html">Colleges</a>
+
+        <a href="/html files/compare.html">Compare</a>
+
+        <a href="/html files/dashboard.html">Dashboard</a>
+      </div>
+
+     
+    </nav>
+
+    <!-- ================= MAIN CONTAINER ================= -->
+
+    <div class="container">
+      <!-- ================= COLLEGE HEADER ================= -->
+
+      <div class="college-header">
+        <div class="college-image">
+          <img
+            src="/images/pimpri"
+            alt="Pimpri Chinchwad College of Engineering Pune"
+          />
+        </div>
+
+        <div class="college-info">
+          <h1>PCCOE, Pune</h1>
+
+          <h3>Pimpri Chinchwad College of Engineering</h3>
+
+          <p class="location">📍 Nigdi, Pune, Maharashtra</p>
+
+          <p class="rating">
+            ⭐ 4.3
+
+            <span> College Reviews </span>
+          </p>
+
+          <div class="buttons">
+            <button class="save-btn" onclick="saveCollege()">
+              ♡ Save College
+            </button>
+
+            <button class="compare-btn" onclick="addCompare()">
+              ⇄ Add to Compare
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= CONTENT ================= -->
+
+      <div class="content">
+        <!-- ================= OVERVIEW ================= -->
+
+        <section id="overview">
+          <h2>About College</h2>
+
+          <p>
+            Pimpri Chinchwad College of Engineering (PCCOE) is an autonomous
+            engineering institute located in Nigdi, Pune. The institute is run
+            by Pimpri Chinchwad Education Trust and is affiliated with
+            Savitribai Phule Pune University. PCCOE offers undergraduate and
+            postgraduate programs with a focus on technical education, practical
+            learning, research and industry-oriented skills.
+          </p>
+
+          <table>
+            <tr>
+              <td>Type</td>
+
+              <td>Private / Un-Aided</td>
+            </tr>
+
+            <tr>
+              <td>Status</td>
+
+              <td>Autonomous</td>
+            </tr>
+
+            <tr>
+              <td>Location</td>
+
+              <td>Sector 26, Pradhikaran, Nigdi, Pune</td>
+            </tr>
+
+            <tr>
+              <td>University</td>
+
+              <td>Savitribai Phule Pune University</td>
+            </tr>
+
+            <tr>
+              <td>Approved By</td>
+
+              <td>AICTE</td>
+            </tr>
+
+            <tr>
+              <td>Admission</td>
+
+              <td>MHT-CET / JEE Main</td>
+            </tr>
+
+            <tr>
+              <td>DTE Code</td>
+
+              <td>6175</td>
+            </tr>
+          </table>
+
+          <!-- ================= HIGHLIGHTS ================= -->
+
+          <h2>Highlights</h2>
+
+          <div class="highlights">
+            <div class="highlight">
+              <div class="icon">🏫</div>
+
+              <h3>Autonomous</h3>
+
+              <p>Institute</p>
+            </div>
+
+            <div class="highlight">
+              <div class="icon">💻</div>
+
+              <h3>Computer</h3>
+
+              <p>Engineering</p>
+            </div>
+
+            <div class="highlight">
+              <div class="icon">🏆</div>
+
+              <h3>NBA</h3>
+
+              <p>Accredited Programs</p>
+            </div>
+
+            <div class="highlight">
+              <div class="icon">📚</div>
+
+              <h3>Multiple</h3>
+
+              <p>UG & PG Programs</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= COURSES ================= -->
+
+        <section id="courses">
+          <h2>Courses Offered</h2>
+
+          <div class="course-list">
+            <div class="course">Computer Engineering</div>
+
+            <div class="course">Information Technology</div>
+
+            <div class="course">Computer Science & Engineering (AI-ML)</div>
+
+            <div class="course">
+              Electronics & Telecommunication Engineering
+            </div>
+
+            <div class="course">Mechanical Engineering</div>
+
+            <div class="course">Civil Engineering</div>
+
+            <div class="course">
+              Electronics Engineering (VLSI Design & Technology)
+            </div>
+
+            <div class="course">Computer Engineering (Regional Language)</div>
+          </div>
+        </section>
+
+        <!-- ================= FEES ================= -->
+
+        <section id="fees">
+          <h2>Fee Structure</h2>
+
+          <p class="note">
+            Fees vary according to category, admission type and academic year.
+            Check the latest official fee notice before admission.
+          </p>
+
+          <table>
+            <tr>
+              <td>B.Tech CAP</td>
+
+              <td>As per current Fee Regulating Authority structure</td>
+            </tr>
+
+            <tr>
+              <td>Institute Level</td>
+
+              <td>As per applicable institute-level fee structure</td>
+            </tr>
+
+            <tr>
+              <td>Hostel - Boys</td>
+
+              <td>₹1,65,000 approx. including mess</td>
+            </tr>
+
+            <tr>
+              <td>Hostel - Girls</td>
+
+              <td>₹1,55,000 approx. including mess</td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- ================= CUTOFF ================= -->
+
+        <section id="cutoff">
+          <h2>Admission Cutoff</h2>
+
+          <p class="note">
+            Cutoff changes every year depending on branch, category, CAP round
+            and seat availability.
+          </p>
+
+          <table>
+            <tr>
+              <td>Computer Engineering</td>
+
+              <td>High / Competitive</td>
+            </tr>
+
+            <tr>
+              <td>Information Technology</td>
+
+              <td>High / Competitive</td>
+            </tr>
+
+            <tr>
+              <td>CSE (AI-ML)</td>
+
+              <td>High / Competitive</td>
+            </tr>
+
+            <tr>
+              <td>E&TC Engineering</td>
+
+              <td>Competitive</td>
+            </tr>
+
+            <tr>
+              <td>Mechanical Engineering</td>
+
+              <td>Moderate</td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- ================= PLACEMENTS ================= -->
+
+        <section id="placements">
+          <h2>Placements</h2>
+
+          <p class="note">
+            Placement figures can vary by department and batch.
+          </p>
+
+          <table>
+            <tr>
+              <td>Computer Engineering Average Salary</td>
+
+              <td>₹6.29 LPA</td>
+            </tr>
+
+            <tr>
+              <td>Computer Engineering Highest Salary</td>
+
+              <td>₹29.55 LPA</td>
+            </tr>
+
+            <tr>
+              <td>Computer Engineering Job Offers</td>
+
+              <td>295 offers reported till 27 July 2026</td>
+            </tr>
+
+            <tr>
+              <td>Recruiters</td>
+
+              <td>
+                NVIDIA, Cohesity, BMC Software, IBM, Rapid7, SAS R&D, Infosys,
+                Accenture and others
+              </td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- ================= FACILITIES ================= -->
+
+        <section id="facilities">
+          <h2>Facilities</h2>
+
+          <div class="facility-list">
+            <div>📚 Central Library</div>
+
+            <div>💻 Computer Labs</div>
+
+            <div>🔬 Research Facilities</div>
+
+            <div>🏠 Hostel</div>
+
+            <div>🍴 Cafeteria</div>
+
+            <div>🏋 Sports Facilities</div>
+
+            <div>🚌 Transportation</div>
+
+            <div>🎯 Student Clubs</div>
+          </div>
+        </section>
+
+        <!-- ================= REVIEWS ================= -->
+
+        <section id="reviews">
+          <h2>Student Reviews</h2>
+
+          <div class="review">
+            <div class="stars">⭐⭐⭐⭐</div>
+
+            <p>
+              PCCOE provides a strong technical environment with opportunities
+              for projects, technical clubs and industry-oriented learning.
+            </p>
+          </div>
+
+          <div class="review">
+            <div class="stars">⭐⭐⭐⭐</div>
+
+            <p>
+              The institute has good infrastructure, academic activities and
+              opportunities for students to develop technical and professional
+              skills.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="/clgDetails/js_files/Pimpri.js"></script>
+  </body>
+</html>

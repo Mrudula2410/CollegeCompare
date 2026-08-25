@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Register - CollegeCompare</title>
+
+    <link
+        rel="stylesheet"
+        href="/css files/login.css"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <h1>Create Account</h1>
+
+            <p>Join CollegeCompare</p>
+
+
+            <form id="registerForm">
+
+
+                <!-- NAME -->
+
+                <div class="input-group">
+
+                    <label>Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="input-group">
+
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter password"
+                        minlength="6"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="login-submit"
+                >
+                    Register
+                </button>
+
+
+                <p id="registerMessage"></p>
+
+
+            </form>
+
+
+            <p class="register-text">
+
+                Already have an account?
+
+                <a href="/html files/login.html">
+                    Login
+                </a>
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="/js files/register.js"></script>
+
+</body>
+
+</html>

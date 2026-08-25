@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | College Finder</title>
+
+    <link rel="stylesheet"
+          href="/css files/profile.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="profile-header">
+
+    <div class="header-left">
+
+        <a href="/html files/dashboard.html"
+           class="back-btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+        </a>
+
+        <h2>My Profile</h2>
+
+    </div>
+
+
+    <a href="/html files/dashboard.html"
+       class="dashboard-btn">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        Dashboard
+
+    </a>
+
+</header>
+
+
+
+<!-- =====================================================
+     PROFILE PAGE
+===================================================== -->
+
+<main class="profile-container">
+
+
+    <!-- =================================================
+         PROFILE CARD
+    ================================================= -->
+
+    <section class="profile-card">
+
+
+        <div class="profile-icon">
+
+            <i class="fa-solid fa-user"></i>
+
+        </div>
+
+
+        <h1 id="profileName">
+            User
+        </h1>
+
+
+        <p id="profileEmail">
+            email@example.com
+        </p>
+
+
+        <span class="profile-badge">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            Registered User
+
+        </span>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+         PERSONAL INFORMATION
+    ================================================= -->
+
+    <section class="info-card">
+
+        <div class="section-title">
+
+            <i class="fa-solid fa-user-pen"></i>
+
+            <h2>Personal Information</h2>
+
+        </div>
+
+
+        <div class="info-row">
+
+            <div class="info-icon">
+
+                <i class="fa-solid fa-user"></i>
+
+            </div>
+
+
+            <div>
+
+                <span>Full Name</span>
+
+                <strong id="infoName">
+                    -
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="info-row">
+
+            <div class="info-icon">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </div>
+
+
+            <div>
+
+                <span>Email Address</span>
+
+                <strong id="infoEmail">
+                    -
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="info-row">
+
+            <div class="info-icon">
+
+                <i class="fa-solid fa-calendar"></i>
+
+            </div>
+
+
+            <div>
+
+                <span>Account</span>
+
+                <strong>
+                    Active
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         SAVED COLLEGES
+    ================================================= -->
+
+    <section class="info-card">
+
+        <div class="section-title">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h2>Saved Colleges</h2>
+
+        </div>
+
+
+        <div class="saved-summary">
+
+            <div class="saved-number">
+
+                <i class="fa-solid fa-bookmark"></i>
+
+                <strong id="savedCount">
+                    0
+                </strong>
+
+                <span>
+                    Colleges Saved
+                </span>
+
+            </div>
+
+
+            <a href="/html files/dashboard.html"
+               class="view-saved-btn">
+
+                View Saved Colleges
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+        <div id="savedCollegePreview"
+             class="saved-preview">
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- =================================================
+         ACCOUNT ACTIONS
+    ================================================= -->
+
+    <section class="info-card account-card">
+
+        <div class="section-title">
+
+            <i class="fa-solid fa-gear"></i>
+
+            <h2>Account</h2>
+
+        </div>
+
+
+        <button
+            id="logoutBtn"
+            class="logout-btn">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </button>
+
+    </section>
+
+
+</main>
+
+
+<script src="/js files/profile.js"></script>
+
+</body>
+
+</html>

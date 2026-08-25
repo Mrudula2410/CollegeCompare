@@ -1,0 +1,602 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow";
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  background-color: white;
+  color: black;
+  justify-content: space-between;
+}
+
+.icon {
+  margin-left: 30px;
+  color: blue;
+  font-weight: bolder;
+}
+
+.clg {
+  color: black;
+  font-weight: bolder;
+}
+
+.cmp {
+  color: blue;
+  font-weight: bolder;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+  font-weight: bold;
+  gap: 100px;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:active {
+  color: blue;
+}
+
+.authButton {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: white;
+  color: blue;
+  border: 6px solid blue;
+  font-weight: bolder;
+  cursor: pointer;
+  
+}
+
+.authButton:active {
+  transform: scale(0.95);
+}
+.bg {
+  .bg {
+    background-color: rgb(215, 226, 243);
+
+    width: 100%;
+
+    min-height: calc(100vh - 80px);
+
+    padding: 55px 70px 80px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+}
+
+.bg-image {
+
+    position: absolute;
+
+    top: 60px;
+
+    right: 70px;
+
+    width: 42%;
+
+    z-index: 1;
+}
+
+
+.bg-image img {
+
+    width: 100%;
+
+    max-width: 550px;
+
+    height: auto;
+
+    display: block;
+}
+.text {
+  font-size: 45px;
+
+  margin-left: 20px;
+}
+
+.find {
+  font-weight: bolder;
+  color: black;
+}
+.right {
+  font-weight: bolder;
+  color: blue;
+}
+.clg {
+  font-weight: bolder;
+  color: black;
+}
+
+.msg {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #555;
+  max-width: 500px;
+}
+.search-box {
+    position: relative;
+    margin-left: 20px;
+}
+
+.search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    z-index: 1000;
+    display: none;
+}
+
+.suggestion-item {
+    padding: 13px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.suggestion-item:hover {
+    background: #f2f5ff;
+}
+/* ==========================================
+   SEARCH SECTION
+========================================== */
+
+.search-section {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    z-index: 100;
+}
+
+
+/* SEARCH BOX */
+
+.search-box {
+    position: relative;
+    width: 330px;
+}
+
+
+#homeCollegeSearch {
+    width: 100%;
+    height: 45px;
+
+    padding: 0 16px;
+
+    font-size: 15px;
+
+    border: 2px solid blue;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background-color: white;
+
+    color: black;
+}
+
+
+#homeCollegeSearch:focus {
+    border-color: darkblue;
+
+    box-shadow:
+        0 0 8px rgba(0, 0, 255, 0.20);
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.search-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.search-college-btn,
+.compare-college-btn {
+
+    height: 45px;
+
+    padding: 0 22px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+    white-space: nowrap;
+}
+
+
+/* SEARCH BUTTON */
+
+.search-college-btn {
+
+    background-color: blue;
+
+    color: white;
+
+    border: 2px solid blue;
+}
+
+
+.search-college-btn:hover {
+
+    background-color: darkblue;
+
+    border-color: darkblue;
+}
+
+
+/* COMPARE BUTTON */
+
+.compare-college-btn {
+
+    background-color: white;
+
+    color: blue;
+
+    border: 2px solid blue;
+}
+
+
+.compare-college-btn:hover {
+
+    background-color: blue;
+
+    color: white;
+}
+
+
+/* CLICK EFFECT */
+
+.search-college-btn:active,
+.compare-college-btn:active {
+
+    transform: scale(0.96);
+
+}
+
+
+/* ==========================================
+   SUGGESTIONS
+========================================== */
+
+.search-suggestions {
+
+    position: absolute;
+
+    top: 50px;
+
+    left: 0;
+
+    width: 100%;
+
+    background-color: white;
+
+    border-radius: 0 0 10px 10px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.15);
+
+    overflow: hidden;
+
+    z-index: 9999;
+
+    display: none;
+}
+
+
+.suggestion-item {
+
+    padding: 12px 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    cursor: pointer;
+
+    color: #222;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+
+.suggestion-item:hover {
+
+    background-color: #f0f3ff;
+
+}
+
+
+.suggestion-item i {
+
+    color: blue;
+
+}
+
+.explore {
+
+    margin-top: 100px;
+
+    font-size: 20px;
+
+    font-weight: bolder;
+
+    color: black;
+}
+
+.cards {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 35px;
+
+    padding: 50px 10px;
+
+    width: 100%;
+
+    max-width: 1500px;
+
+    margin: 0 auto;
+}
+
+.card {
+  width: 230px;
+  height: 150px;
+  padding: 30px 20px;
+  background-color: #f8f9ff;
+  border-radius: 15px;
+  border: 3px solid blue;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: blue;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.Popular {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    margin-bottom: 40px;
+}
+
+.college-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 40px;
+ 
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  
+  
+}
+
+/* CARD */
+
+.college-card {
+  background-color: white;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 15px;
+
+  padding: 15px;
+
+  min-width: 0;
+
+  transition: 0.3s;
+}
+
+.college-card:hover {
+  transform: translateY(-4px);
+}
+
+/* IMAGE */
+
+.college-image {
+  width: 100%;
+}
+
+.college-image img {
+  width: 100%;
+  height: 155px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+/* COLLEGE INFORMATION */
+
+.college-info {
+  padding: 12px 4px 5px;
+}
+
+.college-info h2 {
+  font-size: 18px;
+
+  line-height: 1.3;
+
+  margin-bottom: 7px;
+
+  color: #222;
+}
+
+/* RATING */
+
+.rating {
+  color: #f5a623;
+
+  font-size: 13px;
+
+  margin-bottom: 8px;
+}
+
+/* LOCATION */
+
+.location {
+  color: #666;
+
+  font-size: 12px;
+
+  margin-bottom: 15px;
+}
+
+/* FEES + CUTOFF */
+
+.college-details {
+  display: flex;
+
+  gap: 55px;
+
+  margin-top: 10px;
+}
+
+.college-details div {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.college-details span {
+  color: #777;
+
+  font-size: 11px;
+
+  margin-bottom: 4px;
+}
+
+.college-details b {
+  color: #222;
+
+  font-size: 13px;
+}
+
+/* BUTTONS */
+
+.card-buttons {
+  display: flex;
+
+  gap: 8px;
+
+  margin-top: 18px;
+}
+
+.view-btn {
+  height: 36px;
+
+  padding: 0 12px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-size: 11px;
+
+  font-weight: bold;
+}
+
+.view-btn {
+  background-color: blue;
+
+  color: white;
+
+  border: none;
+
+  flex: 1;
+}
+
+
+
+.view-btn:hover {
+  background-color: darkblue;
+}
+

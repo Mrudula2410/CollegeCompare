@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            135deg,
+            rgba(171, 191, 221, 0.82),
+            rgba(62, 120, 145, 0.65),
+            rgba(44, 38, 129, 0.82)
+        ),
+        url("https://marketplace.canva.com/FLDEc/MAG05NFLDEc/1/tl/canva-illustration-of-nanashi-character-studying-outdoors-with-laptop-MAG05NFLDEc.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ==========================================
+              LOGIN CONTAINER
+========================================== */
+
+.login-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+/* ==========================================
+                  LOGIN BOX
+========================================== */
+
+.login-box {
+    width: 450px;
+
+    background: rgb(192, 218, 237);
+
+    padding: 45px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ==========================================
+                   HEADING
+========================================== */
+
+.login-box h1 {
+    text-align: center;
+
+    font-size: 40px;
+
+    margin-bottom: 8px;
+
+    color: rgb(5, 73, 82);
+}
+
+.login-box > p {
+    text-align: center;
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+
+    color: #222;
+}
+
+
+/* ==========================================
+                INPUT GROUP
+========================================== */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: rgb(5, 73, 82);
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.input-group input:focus {
+    border: none;
+
+    outline: 2px solid rgb(12, 109, 147);
+}
+
+
+/* ==========================================
+                 LOGIN BUTTON
+========================================== */
+
+.login-submit {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 10px;
+
+    background: #5b4df1;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.login-submit:hover {
+    background: #493be0;
+}
+
+.login-submit:active {
+    transform: scale(0.99);
+}
+
+
+/* ==========================================
+                 LOGIN MESSAGE
+========================================== */
+
+#loginMessage {
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-size: 15px;
+}
+
+
+/* ==========================================
+                REGISTER TEXT
+========================================== */
+
+.register-text {
+    text-align: center;
+
+    margin-top: 25px;
+
+    font-size: 16px;
+}
+
+.register-text a {
+    color: #5b4df1;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}

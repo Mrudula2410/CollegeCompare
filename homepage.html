@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Comparison Portal</title>
+    <link rel="stylesheet" href="/css files/homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css files/college.css" />
+  </head>
+  <body>
+    <!-- header section  -->
+    <section class="header">
+      <div class="icon">
+        <i class="fas fa-graduation-cap"></i>
+        <span class="clg">College</span><span class="cmp">Compare</span>
+      </div>
+      <!-- links  -->
+      <div class="links">
+        <span><a href="/html files/homepage.html">Home</a></span>
+        <span><a href="/html files/college.html">Colleges</a></span>
+
+        <span><a href="/html files/compare.html">Compare</a></span
+        ><a href="/html files/dashboard.html">Dashboard</a>    
+      </div>
+      <!-- login btn  -->
+     <button class="authButton" id="authButton">Login</button>
+    </section>
+    <!-- background  -->
+    <section class="bg">
+      <div class="text">
+        <span class="find">Find the</span> <span class="right">Right</span
+        ><br /><span class="clg">College for Your Future !</span><br />
+      </div>
+      <div class="msg">
+        Compare colleges, courses, fees, cutoffs and placements in one place...
+      </div>
+      <!-- search bar  -->
+     <div class="search-section">
+
+    <div class="search-box">
+        <input 
+            type="text" 
+            id="homeCollegeSearch" 
+            placeholder="Search college..."
+            autocomplete="off"
+        >
+
+        <div id="searchSuggestions" class="search-suggestions"></div>
+    </div>
+
+    <div class="search-buttons">
+
+        <button id="homeSearchBtn" class="search-college-btn">
+            <i class="fas fa-search"></i>
+            Search College
+        </button>
+
+       <a href="/html files/compare.html"> <button id="homeCompareBtn" class="compare-college-btn">
+            <i class="fas fa-code-compare"></i>
+            Compare
+        </button></a>
+
+    </div>
+
+  </div>
+</div>
+
+
+      <div class="bg-image">
+        <img src="/images/clg_image.png" alt="college illustration" />
+      </div>
+      
+      <div class="explore" align="center">~Explore Colleges By~</div>
+      <!-- cards  -->
+      <div class="cards">
+        <div class="card">
+          <i class="fas fa-trophy"></i>
+          <h3>Top Colleges</h3>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>By Location</h3>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-laptop"></i>
+          <h3>By Branch</h3>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-indian-rupee-sign"></i>
+          <h3>By Fees</h3>
+        </div>
+      </div>
+      <div class="Popular" align="center">~Popular Colleges~</div>
+      <div class="college-grid" align="center">
+        <!-- CARD 1 -->
+
+        <div
+          class="college-card"
+          data-name="College of Engineering Pune"
+          data-location="Pune"
+          data-branches="Computer Engineering,Electrical Engineering,Mechanical Engineering"
+          data-fees="135000"
+          data-type="Government"
+        >
+          <div class="college-image">
+            <img
+              src="/images/COEP.jpeg"
+              alt="College of Engineering Pune"
+            />
+          </div>
+
+          <div class="college-info">
+            <h2>College of Engineering Pune</h2>
+
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              4.5
+            </div>
+
+            <p class="location">
+              <i class="fas fa-location-dot"></i>
+              Pune, Maharashtra
+            </p>
+
+            <div class="college-details">
+              <div>
+                <span>Fees</span>
+                <b>₹1,35,000</b>
+              </div>
+
+              <div>
+                <span>Cutoff</span>
+                <b>96%</b>
+              </div>
+            </div>
+
+            <div class="card-buttons">
+              <a href="/clgDetails/html_files/coep.html"><button class="view-btn">View Details</button></a>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div
+          class="college-card"
+          data-name="VJTI Mumbai"
+          data-location="Mumbai"
+          data-branches="Computer Engineering,Information Technology,Mechanical Engineering"
+          data-fees="85000"
+          data-type="Government"
+        >
+          <div class="college-image">
+            <img
+              src="/images/VJTI.jpeg"
+              alt="VJTI Mumbai"
+            />
+          </div>
+
+          <div class="college-info">
+            <h2>Veermata Jijabai Technological Institute</h2>
+
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              4.6
+            </div>
+
+            <p class="location">
+              <i class="fas fa-location-dot"></i>
+              Mumbai, Maharashtra
+            </p>
+
+            <div class="college-details">
+              <div>
+                <span>Fees</span>
+                <b>₹85,000</b>
+              </div>
+
+              <div>
+                <span>Cutoff</span>
+                <b>98%</b>
+              </div>
+            </div>
+
+            <div class="card-buttons">
+              <a href="/clgDetails/html_files/VJTI.html"><button class="view-btn">View Details</button></a>
+
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div
+          class="college-card"
+          data-name="PICT Pune"
+          data-location="Pune"
+          data-branches="Computer Engineering,Information Technology,Electronics and Telecommunication"
+          data-fees="120000"
+          data-type="Private"
+        >
+          <div class="college-image">
+            <img
+              src="/images/pict"
+              alt="PICT Pune"
+            />
+          </div>
+
+          <div class="college-info">
+            <h2>Pune Institute of Computer Technology</h2>
+
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              4.4
+            </div>
+
+            <p class="location">
+              <i class="fas fa-location-dot"></i>
+              Pune, Maharashtra
+            </p>
+
+            <div class="college-details">
+              <div>
+                <span>Fees</span>
+                <b>₹1,20,000</b>
+              </div>
+
+              <div>
+                <span>Cutoff</span>
+                <b>95%</b>
+              </div>
+            </div>
+
+            <div class="card-buttons">
+              <a href="/clgDetails/html_files/PICT.html"><button class="view-btn">View Details</button></a>
+
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+    <script src="/js files/homepage.js"></script>
+    <script src="/js files/auth.js"></script>
+  </body>
+</html>
