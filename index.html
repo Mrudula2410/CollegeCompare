@@ -4,11 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CollegeCompare</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 60px;
+            background: #f5f7fb;
+        }
+
+        h1 {
+            color: #2563eb;
+        }
+
+        p {
+            color: #555;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Welcome to CollegeCompare</h1>
-    <p>Compare colleges and find the best option for you.</p>
+    <h1>CollegeCompare</h1>
+    <p>Compare colleges and find the best one for you.</p>
+
+    <button onclick="checkServer()">Check Server</button>
+
+    <p id="result"></p>
+
+    <script>
+        async function checkServer() {
+            try {
+                const response = await fetch("http://localhost:3001/");
+                const data = await response.text();
+
+                document.getElementById("result").textContent = data;
+            } catch (error) {
+                document.getElementById("result").textContent =
+                    "Server is not connected.";
+            }
+        }
+    </script>
 
 </body>
 </html>
