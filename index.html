@@ -44,7 +44,7 @@
     <script>
         async function checkServer() {
             try {
-                const response = await fetch("http://localhost:3001/");
+                const response = await fetch("https://YOUR-BACKEND-URL.onrender.com/");
                 const data = await response.text();
 
                 document.getElementById("result").textContent = data;
